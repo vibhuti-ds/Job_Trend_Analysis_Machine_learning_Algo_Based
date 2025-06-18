@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<style>
+    
+</style>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row my-3">
+        <div class="col-md-8 mx-auto">
+            <form method="post" class="card">
+                <div class="card-header">
+                    {% if prediction %}
+                        Predicted payrate will be Rs.{{prediction}}
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <div class="form-floating mb-3">
+                        
+                        <div class="mb-3">
+                            <label for="comp" class="form-label">Company</label>
+                            <select class="form-select form-select-lg" name="com" id="comp" required>
+                                <option selected disabled>Select Company</option>
+                                {% for company in comp %}
+                                <option>{{company}}</option>
+                                {% endfor %} 
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edu" class="form-label">Education</label>
+                            <select class="form-select form-select-lg" name="edu" id="edu" required>
+                                <option selected disabled>Select Education</option>
+                                {% for education in edu %}
+                                <option>{{education}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exp" class="form-label">Experience</label>
+                            <select class="form-select form-select-lg" name="exp" id="exp" required>
+                                <option selected disabled>Select Experience</option>
+                                {% for experience in exp %}
+                                <option>{{experience}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ind" class="form-label">Industry</label>
+                            <select class="form-select form-select-lg" name="ind" id="types" required>
+                                <option selected disabled>Select Industry</option>
+                                {% for industry in ind %}
+                                <option>{{industry}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loc" class="form-label">Job Location</label>
+                            <select class="form-select form-select-lg" name="loc" id="loc" required>
+                                <option selected disabled>Select Job Location</option>
+                                {% for joblocation in loc %}
+                                <option>{{joblocation}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Job Title</label>
+                            <select class="form-select form-select-lg" name="title" id="title" required>
+                                <option selected disabled>Select Job Title</option>
+                                {% for jobtitle in title %}
+                                <option>{{jobtitle}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-dark">PREDICT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+    
+</script>
+{% endblock %}
