@@ -18,7 +18,6 @@ The aim of this project is to:
 
   - Data collected through web scraping of job listings including:
   - `job_title`, `experience_required`, `location`, `salary`, `qualification`, `stream`, `industry`, `company_type`, etc.
--
 
 ---
 
