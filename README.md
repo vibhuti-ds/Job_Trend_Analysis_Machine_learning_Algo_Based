@@ -1,10 +1,10 @@
-# 💼Job_Trend_Analysis_Machine_learning_Algo_Based
+# Job_Trend_Analysis_Machine_learning_Algo_Based
 ---
 A machine learning-powered project built to analyze real-time job listing data from **Naukri.com**, this model predicts a candidate’s **expected pay grade** based on their profile. It includes full data cleaning, EDA, model training with multiple algorithms, and a **user-friendly web dashboard** built using HTML and CSS.
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 The aim of this project is to:
 - Analyze job market trends across India.
@@ -14,16 +14,15 @@ The aim of this project is to:
 
 ---
 
-## 🌐 Data Source
+## Data Source
 
-- 📌 Website: [Naukri.com](https://www.naukri.com/)
-- 📥 Data collected through web scraping of job listings including:
+  - Data collected through web scraping of job listings including:
   - `job_title`, `experience_required`, `location`, `salary`, `qualification`, `stream`, `industry`, `company_type`, etc.
-- 🔧 Scraped data saved in CSV format for further processing.
+-
 
 ---
 
-## 📊 Project Workflow
+## Project Workflow
 
 ### 🧩 Step 1: Data Scraping & Storage
 - Used `requests` + `BeautifulSoup` to extract job listings from Naukri.com.
@@ -31,8 +30,7 @@ The aim of this project is to:
 
 ---
 
-### 🧼 Step 2: Data Cleaning & Preprocessing
-📁 `01_data_cleaning.ipynb`
+### Step 2: Data Cleaning & Preprocessing
 - Removed nulls and duplicates
 - Standardized string formats (e.g., "B.Tech", "B. Tech", etc.)
 - Converted categorical features into numerical using:
@@ -43,8 +41,7 @@ The aim of this project is to:
 
 ---
 
-### 📊 Step 3: Exploratory Data Analysis (EDA)
-📁 `02_eda.ipynb`
+### Step 3: Exploratory Data Analysis (EDA)
 - Visualized:
   - Top-paying cities
   - Salary trends per industry
@@ -55,8 +52,7 @@ The aim of this project is to:
 
 ---
 
-### 🤖 Step 4: Model Training
-📁 `03_model_training.ipynb`
+### Step 4: Model Training
 - Models used:
   1. **Linear Regression** → For predicting numeric pay grade
   2. **Logistic Regression** → For classifying into low/medium/high salary group
@@ -67,12 +63,11 @@ The aim of this project is to:
   - For regression: `R² Score`, `RMSE`
   - For classification: `Accuracy`, `Precision`, `Recall`, `F1-score`
 
-📦 Models saved using `joblib` or `pickle` in the `/models/` directory.
+ Models saved using `joblib` or `pickle` in the `/models/` directory.
 
 ---
 
-### 🖥️ Step 5: Front-End Dashboard (HTML/CSS)
-📁 `dashboard/index.html`, `dashboard/style.css`
+### Step 5: Front-End Dashboard (HTML/CSS)
 
 - Form inputs for:
   - Qualification
@@ -81,13 +76,13 @@ The aim of this project is to:
   - Company Type (Startup, MNC, Public, etc.)
   - Desired Role/Post
 
-✅ On submission, the model predicts the **expected pay grade** (e.g., ₹6.5 LPA).
+ On submission, the model predicts the **expected pay grade** (e.g., ₹6.5 LPA).
 
 > *(Currently connected through backend model locally. Flask or Streamlit integration optional.)*
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 Job_Trend_Analysis_ML/
 ├── data/
@@ -115,7 +110,7 @@ Edit
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## Tools & Technologies Used
 
 | Category               | Tools / Libraries                               |
 |------------------------|--------------------------------------------------|
@@ -130,7 +125,7 @@ Edit
 
 ---
 
-## 📊 Example Prediction
+## Example Prediction
 
 **User Input:**
 - Qualification: M.Tech
@@ -140,33 +135,32 @@ Edit
 - Desired Role: Data Analyst
 
 **Predicted Pay Grade:**
-- 💰 ₹8.4 – ₹9.5 LPA
+-  ₹8.4 – ₹9.5 LPA
 
 ---
 
-## 🚀 Future Scope
+## Future Scope
 
-- 🌐 Live dashboard deployment using Streamlit or Flask
-- 🧠 Use ensemble models (Random Forest, XGBoost)
-- 📈 Add real-time scraping and auto-retraining pipeline
-- 🤖 Include NLP for analyzing job descriptions
-- 🗺️ Map-based insights for city-wise opportunities
+- Live dashboard deployment using Streamlit or Flask
+- Use ensemble models (Random Forest, XGBoost)
+- Add real-time scraping and auto-retraining pipeline
+- Include NLP for analyzing job descriptions
+- Map-based insights for city-wise opportunities
 
 ---
 
-## 🙋 Author
+## Author
 
 **Vibhuti Awasthi**  
-📍 Lucknow, India  
-🎓 MSc in Statistics (2025) – Dr. Shakuntala Mishra National Rehabilitation University  
-🧠 Interests: Data Science | Machine Learning | Predictive Modeling | Dashboarding  
-
-🔗 https://github.com/vibhuti-ds
-✉️ vibhuti.awasthi@outlook.com 
+    Lucknow, India  
+    MSc in Statistics (2025) – Dr. Shakuntala Mishra National Rehabilitation University  
+    Interests: Data Science | Machine Learning | Predictive Modeling | Dashboarding  
+https://github.com/vibhutiawasthi
+vibhuti.awasthi@outlook.com 
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this project with attribution.
