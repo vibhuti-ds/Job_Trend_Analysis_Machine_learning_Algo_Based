@@ -1,4 +1,4 @@
-# Job_Trend_Analysis_Machine_learning_Algo_Based
+# Job Trend Analysis Machine learning Algorithums 
 ---
 A machine learning-powered project built to analyze real-time job listing data from **Naukri.com**, this model predicts a candidate’s **expected pay grade** based on their profile. It includes full data cleaning, EDA, model training with multiple algorithms, and a **user-friendly web dashboard** built using HTML and CSS.
 
@@ -24,7 +24,7 @@ The aim of this project is to:
 
 ## Project Workflow
 
-### 🧩 Step 1: Data Scraping & Storage
+### Step 1: Data Scraping & Storage
 - Used `requests` + `BeautifulSoup` to extract job listings from Naukri.com.
 - Stored in a CSV with over 5,000+ rows and 15+ features.
 
@@ -156,6 +156,7 @@ Edit
     MSc in Statistics (2025) – Dr. Shakuntala Mishra National Rehabilitation University  
     Interests: Data Science | Machine Learning | Predictive Modeling | Dashboarding  
 https://github.com/vibhutiawasthi
+
 vibhuti.awasthi@outlook.com 
 
 ---
